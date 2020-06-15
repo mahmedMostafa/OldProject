@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="left"
+        android:layout_gravity="left"
+        android:id="@+id/drawer_layout"
+        android:fitsSystemWindows="true"
+        tools:context=".homecategory.HomeActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/main_color">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_menu_black_24dp"
+                    android:id="@+id/opne_drawer"
+                    android:layout_marginRight="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/app_font"
+                    android:text="Home"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/page_title"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="28dp" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/page_container"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:fitsSystemWindows="true"
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="32dp"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/avatar"
+                        android:id="@+id/user_img"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="Ahmed Zaki"
+                        android:textColor="@color/main_color"
+                        android:textSize="28dp"
+                        android:id="@+id/user_name"
+                        />
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="@font/app_font"
+                    android:text="Home"
+                    android:textColor="@color/main_color"
+                    android:textSize="28dp"
+                    android:drawableLeft="@drawable/ic_home_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:id="@+id/home_item"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="@font/app_font"
+                    android:text="Favourite"
+                    android:textColor="@color/main_color"
+                    android:textSize="28dp"
+                    android:drawableLeft="@drawable/ic_favorite_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:id="@+id/fav_item"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="@font/app_font"
+                    android:text="History"
+                    android:textColor="@color/main_color"
+                    android:textSize="28dp"
+                    android:drawableLeft="@drawable/ic_history_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:id="@+id/history_item"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="@font/app_font"
+                    android:text="Settings"
+                    android:textColor="@color/main_color"
+                    android:textSize="28dp"
+                    android:drawableLeft="@drawable/ic_settings_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:id="@+id/settings_item"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="@font/app_font"
+                    android:text="About us"
+                    android:textColor="@color/main_color"
+                    android:textSize="28dp"
+                    android:drawableLeft="@drawable/ic_info_black_24dp"
+                    android:drawablePadding="16dp"
+                    android:id="@+id/about_item"
+                    />
+            </LinearLayout>
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

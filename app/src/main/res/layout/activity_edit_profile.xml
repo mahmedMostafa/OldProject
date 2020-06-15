@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".settings.editprofile.EditProfileActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/main_color"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/page_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:fontFamily="@font/app_font"
+                        android:text="Edit Profile"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="28dp" />
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/app_font"
+                android:text="upload your image"
+                android:textColor="@color/main_color"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:weightSum="2">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="16dp"
+                    android:id="@+id/fname_et"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_shape"
+                    android:fontFamily="@font/app_font"
+                    android:hint="first name"
+                    android:inputType="text"
+                    android:paddingLeft="16dp"
+
+                    android:textColorHint="@color/gray_color" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/et_shape"
+                    android:fontFamily="@font/app_font"
+                    android:hint="Last name"
+                    android:id="@+id/lname_et"
+                    android:inputType="text"
+                    android:paddingLeft="16dp"
+                    android:textColorHint="@color/gray_color"
+
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/et_shape"
+                android:fontFamily="@font/app_font"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="16dp"
+                android:id="@+id/email_et"
+                android:textColorHint="@color/gray_color"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/et_shape"
+                android:fontFamily="@font/app_font"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:id="@+id/phone_et"
+                android:paddingLeft="16dp"
+                android:textColorHint="@color/gray_color"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape_solid"
+                android:fontFamily="@font/app_font"
+                android:text="cancel"
+                android:visibility="invisible"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor"
+                android:textSize="18dp"
+                android:id="@+id/login_btn"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_shape_solid"
+                android:fontFamily="@font/app_font"
+                android:text="Save"
+                android:id="@+id/save_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
